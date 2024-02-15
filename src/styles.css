@@ -1,0 +1,17 @@
+body {
+   background-color: #D5B4B4;
+   font-family: "Fredoka", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 100;
+   font-style: normal;
+   font-variation-settings: 100;
+}
+
+.page-content {
+    background: #E4D0D0;
+    max-width: 600px;
+    margin: 45px auto;
+    box-shadow: 0 30px 50px rgb(65, 50, 100, 0.08);
+    padding: 30px;
+    border-radius: 16px;
+}
