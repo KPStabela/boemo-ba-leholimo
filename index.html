@@ -12,23 +12,29 @@
 <body>
     <div class="page-content">
     <header>
-        <img src="svg-illustrations/weather-illus.svg.svg" width="100px" />Weather Update <br />
-        <hr />
-        <form id="search-city">
-            <input type="search" placeholder="Enter a city..." name="search-city" required />
-            <input type="submit" value="search" name="search-city" />
+        <img src="svg-illustrations/weather-illus.svg.svg"><span class="heading">Weather Update</span>
+        <hr class="first-divider" />
+        <form id="search-city" class="search-form">
+            <input type="search" placeholder="Enter a city..." name="search-city" required class="search-form-input" />
+            <input type="submit" value="Search" name="search-city" class="search-form-button"/>
         </form>
     </header>
     <main>
+        <div class="weather-app-info-container">
         <div>
-    <h1>Paris</h1>
-    <p>
+         <h1 class="weather-app-city">Paris</h1>
+         <p class="weather-app-details">
         Tuesday 14:49, scattered clouds
-        <br />
-        Humidity: 66%, wind: 3.13km/h
-    </p>
+         <br />
+        Humidity: <strong>66%</strong>, wind: <strong>33.13km/h</strong>
+         </p>
         </div>
-        <div>🌤️ 12&deg;C</div>
+        <div class="weather-app-temperature-container">
+        <span class="weather-app-icon">🌤️</span>
+        <span class="weather-app-temperature">12</span>
+        <span class="weather-app-units">&deg;C</span>
+        </div>
+    </div>
     </main>
     <hr />
     <footer>
