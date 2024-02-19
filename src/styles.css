@@ -112,41 +112,39 @@ footer {
 }
 
 .forecast-container {
-    float: inline;
-    flex-wrap: wrap;
-    column-count: 2;
-    column-gap: 20px;
-    column-width: 800px 800px 0;
     display: flex;
     margin-top: 20px;
     margin-left: 5px;
-    font-size: 16px;
+    column-width: 400px 400px 0;
+    column-gap: 20px;
+    font-size: 14px;
+    align-items: center;
     text-align: center;
 }
 
 .row-one {
     display: flex;
-    width: 100px;
+    width: 80px;
 }
 
 .row-two {
     display: flex;
-    width: 100px;
+    width: 80px;
 }
 
 .row-three {
     display: flex;
-    width: 100px;
+    width: 80px;
 }
 
 .row-four {
     display: flex;
-    width: 100px;
+    width: 80px;
 }
 
 .row-five {
     display: flex;
-    width: 100px;
+    width: 80px;
 }
 
 .weather-forecast-date {
@@ -155,9 +153,13 @@ footer {
 }
 
 .weather-forecast-temperatures {
-    font-size: 13px;
+    font-size: 6px;
 }
 
 .weather-forecast-temperature-min {
     opacity: 0.5;
+}
+
+.weather-forecast-icon {
+    width: 45px;
 }
