@@ -46,8 +46,37 @@ function updateCity(event) {
 
     searchCity(searchInput.value);
 }
+
+function displayForecast() {
+    let forecastElement = document.querySelector("#forecast");
+
+    let days =['Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    let forecastHtml = "";
+
+    days.forEach(function (day) {
+     forecastHtml = 
+      forecastHtml + 
+      `
+      <div class="row-one">
+       <div class="col-1">
+        <div class="weather-forecast-date">18:23</div>
+        <div class="weather-forecast-day">${day}</div> 
+        <div class="weather-forecast-icon">🌤️</div>  
+        <div class="weather-forecast-temeperatures">
+        <span class="weather-forecast-temperature-max">18&deg;C</span>
+        <span class="weather-forecast-temperature-min">24&deg;C</span>
+        </div>
+       </div>
+     </div>
+   `;
+  });
+
+  forecastElement.innerHTML = forecastHtml;
+}
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", updateCity);
 
 searchCity("Klerksdorp");
+displayForecast();
 
